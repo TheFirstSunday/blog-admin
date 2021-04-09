@@ -4,15 +4,18 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   plugins: ['@typescript-eslint'],
   extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
     'airbnb',
     'airbnb/hooks',
+    'plugin:prettier/recommended',
+    'prettier/react',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'prettier/@typescript-eslint'
   ],
   rules: {
     /**
@@ -58,8 +61,8 @@ module.exports = {
       'error',
       {
         assertionStyle: 'as',
-        objectLiteralTypeAssertions: 'never',
-      },
+        objectLiteralTypeAssertions: 'never'
+      }
     ],
     /**
      * 优先使用 interface 而不是 type
@@ -141,9 +144,9 @@ module.exports = {
           'protected-method',
           'private-method',
           'instance-method',
-          'method',
-        ],
-      },
+          'method'
+        ]
+      }
     ],
     /**
      * 接口中的方法必须用属性的方式定义
@@ -274,8 +277,8 @@ module.exports = {
       'error',
       {
         allowDeclarations: true,
-        allowDefinitionFiles: true,
-      },
+        allowDefinitionFiles: true
+      }
     ],
     /**
      * 禁止在 optional chaining 之后使用 non-null 断言（感叹号）
@@ -315,8 +318,8 @@ module.exports = {
     '@typescript-eslint/no-this-alias': [
       'error',
       {
-        allowDestructuring: true,
-      },
+        allowDestructuring: true
+      }
     ],
     /**
      * 禁止 throw 字面量，必须 throw 一个 Error 对象
@@ -376,8 +379,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
     /**
      * 已定义的变量必须使用
@@ -513,8 +516,8 @@ module.exports = {
       {
         path: 'never',
         types: 'always',
-        lib: 'always',
-      },
+        lib: 'always'
+      }
     ],
     /**
      * interface 和 type 定义时必须声明成员的类型
@@ -528,8 +531,8 @@ module.exports = {
         objectDestructuring: false,
         parameter: false,
         propertyDeclaration: true,
-        variableDeclaration: false,
-      },
+        variableDeclaration: false
+      }
     ],
     /**
      * 方法调用时需要绑定到正确的 this 上
@@ -617,8 +620,8 @@ module.exports = {
     'react/jsx-key': [
       'error',
       {
-        checkFragmentShorthand: true,
-      },
+        checkFragmentShorthand: true
+      }
     ],
     /**
      * 限制 jsx 层级
@@ -775,8 +778,8 @@ module.exports = {
     'react/no-unsafe': [
       'error',
       {
-        checkAliases: true,
-      },
+        checkAliases: true
+      }
     ],
     /**
      * 禁止出现未使用的 propTypes
@@ -856,6 +859,6 @@ module.exports = {
     /**
      * img, br 标签中禁止有 children
      */
-    'react/void-dom-elements-no-children': 'error',
+    'react/void-dom-elements-no-children': 'error'
   }
 }
