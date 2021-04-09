@@ -859,6 +859,9 @@ module.exports = {
     /**
      * img, br 标签中禁止有 children
      */
-    'react/void-dom-elements-no-children': 'error'
+    'react/void-dom-elements-no-children': 'error',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off'
   }
 }
