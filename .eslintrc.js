@@ -77,6 +77,7 @@ module.exports = {
      * 有默认值或可选的参数必须放到最后
      */
     'default-param-last': 'off',
+    'no-param-reassign': 'off',
     '@typescript-eslint/default-param-last': 'off',
     /**
      * 禁止使用 foo['bar']，必须写成 foo.bar
@@ -93,7 +94,7 @@ module.exports = {
      * 必须设置类的成员的可访问性
      * @reason 将不需要公开的成员设为私有的，可以增强代码的可理解性，对文档输出也很友好
      */
-    '@typescript-eslint/explicit-member-accessibility': 'error',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
     /**
      * 导出的函数或类中的 public 方法必须定义输入输出参数的类型
      */
@@ -238,7 +239,7 @@ module.exports = {
      * @reason 只允许在 class 中使用 this
      */
     'no-invalid-this': 'off',
-    '@typescript-eslint/no-invalid-this': 'error',
+    '@typescript-eslint/no-invalid-this': 'off',
     /**
      * 禁止使用无意义的 void 类型
      * @reason void 只能用在函数的返回值中
@@ -306,6 +307,7 @@ module.exports = {
      * @reason 统一使用 import 来引入模块，特殊情况使用单行注释允许 require 引入
      */
     '@typescript-eslint/no-require-imports': 'error',
+    'import/no-extraneous-dependencies': 'off',
     /**
      * 禁止变量名与上层作用域内的已定义的变量重复
      * @reason 很多时候函数的形参和传参是同名的

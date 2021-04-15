@@ -8,10 +8,8 @@ import lessToJS from 'less-vars-to-js'
 
 
 const themeVariables = lessToJS(
-  fs.readFileSync(path.resolve(__dirname, './config/variables.less'), 'utf8')
+  fs.readFileSync(path.resolve(__dirname, './src/assets/style/variables.less'), 'utf8')
 )
-
-const env = process.argv[process.argv.length - 1]
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -22,7 +20,7 @@ export default defineConfig(({ mode }) => ({
         libList: [
           {
             libName: 'antd',
-            style: (name) => `antd/lib/${name}/style/index.less`
+            style: (name) => `antd/es/${name}/style`,
           }
         ]
       })],
@@ -34,7 +32,7 @@ export default defineConfig(({ mode }) => ({
           // 重写 less 变量，定制样式
           modifyVars: themeVariables,
           // 全局less
-          additionalData: '@import "./src/assets/style/index.css";'
+          additionalData: '@import "./src/assets/style/reset.less";'
         }
       }
     },
