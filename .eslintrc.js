@@ -864,6 +864,15 @@ module.exports = {
     'react/void-dom-elements-no-children': 'error',
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'react-hooks/rules-of-hooks': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'FunctionExpression',
+      'WithStatement',
+      "BinaryExpression[operator='in']"
+    ],
+    'no-plusplus': 'off',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 }
