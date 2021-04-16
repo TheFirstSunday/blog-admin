@@ -868,11 +868,11 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'off',
     'no-restricted-syntax': [
       'error',
-      'FunctionExpression',
       'WithStatement',
       "BinaryExpression[operator='in']"
     ],
     'no-plusplus': 'off',
+    'consistent-return': 'off',
     'react-hooks/exhaustive-deps': 'warn'
   }
 }
