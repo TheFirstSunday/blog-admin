@@ -866,13 +866,10 @@ module.exports = {
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
     'react-hooks/rules-of-hooks': 'off',
-    'no-restricted-syntax': [
-      'error',
-      'WithStatement',
-      "BinaryExpression[operator='in']"
-    ],
+    'no-restricted-syntax': ['error', 'WithStatement', "BinaryExpression[operator='in']"],
     'no-plusplus': 'off',
     'consistent-return': 'off',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'no-underscore-dangle': 'off'
   }
 }
