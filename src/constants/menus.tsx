@@ -9,29 +9,29 @@ import {
 
 const menu = [
   {
-    path: '/admin',
+    path: '/',
     icon: <HomeOutlined />,
     name: '首页'
   },
   {
-    path: '/admin/article',
+    path: '/article',
     icon: <SwitcherOutlined />,
     name: '文章',
     children: [
       {
-        path: '/admin/article/articleManager',
+        path: '/article/articleManager',
         icon: <FolderOutlined />,
         name: '管理'
       },
       {
-        path: '/admin/article/addArticles',
+        path: '/article/addArticles',
         icon: <EditOutlined />,
         name: '新增'
       }
     ]
   },
   {
-    path: '/admin/user-manager',
+    path: '/user-manager',
     icon: <UserOutlined />,
     name: '用户管理'
   }

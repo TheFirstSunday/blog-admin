@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Layout } from 'antd'
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import NProgress from 'nprogress'
 import Sidebar from './sidebar'
 import SHeader from './header'
 
@@ -12,14 +13,36 @@ const { Header, Sider, Content } = Layout
 interface IProps {
   children: React.ReactNode
 }
+
+function removeLoading() {
+  const $loading = document.querySelector('.sunday-loading')
+
+  if ($loading) {
+    $loading.addEventListener('webkitTransitionEnd', () => {
+      $loading.parentNode?.removeChild($loading)
+    })
+
+    $loading.classList.add('hidden')
+  }
+}
+
 const SLayout: React.FC<IProps> = ({ children }) => {
   const [collapsed, setCollapsed] = React.useState(false)
   const toggle = () => setCollapsed((state) => !state)
+  const location = useLocation()
 
+  React.useEffect(() => {
+    removeLoading()
+  }, [])
+  React.useEffect(() => {
+    NProgress.start()
+    document.body.scrollIntoView({ behavior: 'smooth' })
+    NProgress.done()
+  }, [location])
   return (
     <Layout className={styles['layout-conta']}>
       <Sider trigger={null} collapsible collapsed={collapsed}>
-        <Link to="/admin" className={styles.logo}>
+        <Link to="/" className={styles.logo}>
           <svg
             t="1618418557379"
             className="icon"

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Spin } from 'antd'
 import SLayout from '@/layout'
 import routers from './routes'
@@ -8,7 +8,7 @@ const NotFound = <div>notfound</div>
 
 const RouterView = () => {
   return (
-    <BrowserRouter>
+    <Router basename="/admin">
       <SLayout>
         <React.Suspense
           fallback={
@@ -25,15 +25,14 @@ const RouterView = () => {
           }
         >
           <Switch>
-            <Redirect exact from="/" to={routers[0].path} />
-            {routers.map((router, index) => (
-              <Route exact key={index} {...router} />
+            {routers.map((route, index) => (
+              <Route exact key={index} {...route} />
             ))}
             <Route>{NotFound}</Route>
           </Switch>
         </React.Suspense>
       </SLayout>
-    </BrowserRouter>
+    </Router>
   )
 }
 
