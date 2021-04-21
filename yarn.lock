@@ -389,6 +389,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/highlight.js@^9.7.0":
+  version "9.12.4"
+  resolved "http://npm-int.fiture.com:80/@types%2fhighlight.js/-/highlight.js-9.12.4.tgz#8c3496bd1b50cc04aeefd691140aa571d4dbfa34"
+  integrity sha1-jDSWvRtQzASu79aRFAqlcdTb+jQ=
+
 "@types/history@*":
   version "4.7.8"
   resolved "https://registry.npm.taobao.org/@types/history/download/@types/history-4.7.8.tgz#49348387983075705fe8f4e02fb67f7daaec4934"
@@ -436,12 +441,31 @@
   resolved "https://registry.npm.taobao.org/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/linkify-it@*":
+  version "3.0.1"
+  resolved "http://npm-int.fiture.com:80/@types%2flinkify-it/-/linkify-it-3.0.1.tgz#4d26a9efe3aa2caf829234ec5a39580fc88b6001"
+  integrity sha1-TSap7+OqLK+CkjTsWjlYD8iLYAE=
+
+"@types/markdown-it@^12.0.1":
+  version "12.0.1"
+  resolved "http://npm-int.fiture.com:80/@types%2fmarkdown-it/-/markdown-it-12.0.1.tgz#8391e19fea4796ff863edda55800c7e669beb358"
+  integrity sha1-g5Hhn+pHlv+GPt2lWADH5mm+s1g=
+  dependencies:
+    "@types/highlight.js" "^9.7.0"
+    "@types/linkify-it" "*"
+    "@types/mdurl" "*"
+
 "@types/mdast@^3.0.0":
   version "3.0.3"
   resolved "https://registry.npm.taobao.org/@types/mdast/download/@types/mdast-3.0.3.tgz#2d7d671b1cd1ea3deb306ea75036c2a0407d2deb"
   integrity sha1-LX1nGxzR6j3rMG6nUDbCoEB9Les=
   dependencies:
     "@types/unist" "*"
+
+"@types/mdurl@*":
+  version "1.0.2"
+  resolved "http://npm-int.fiture.com:80/@types%2fmdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
+  integrity sha1-4s6dg6YTus8oTHvn1JGUXjnh+Ok=
 
 "@types/minimist@^1.2.0":
   version "1.2.1"
@@ -744,6 +768,11 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "http://npm-int.fiture.com:80/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha1-JG9Q88p4oyQPbJl+ipvR6sSeSzg=
+
 aria-query@^4.2.2:
   version "4.2.2"
   resolved "https://registry.npm.taobao.org/aria-query/download/aria-query-4.2.2.tgz#0d2ca6c9aceb56b8977e9fed6aed7e15bbd2f83b"
@@ -934,6 +963,11 @@ caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001181:
   version "1.0.30001208"
   resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001208.tgz?cache=0&sync_timestamp=1617866642507&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001208.tgz#a999014a35cebd4f98c405930a057a0d75352eb9"
   integrity sha1-qZkBSjXOvU+YxAWTCgV6DXU1Lrk=
+
+ccount@^1.0.0:
+  version "1.1.0"
+  resolved "http://npm-int.fiture.com:80/ccount/-/ccount-1.1.0.tgz#246687debb6014735131be8abab2d93898f8d043"
+  integrity sha1-JGaH3rtgFHNRMb6KurLZOJj40EM=
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -1326,6 +1360,11 @@ entities@^2.0.0:
   resolved "https://registry.npm.taobao.org/entities/download/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU=
 
+entities@~2.1.0:
+  version "2.1.0"
+  resolved "http://npm-int.fiture.com:80/entities/-/entities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
+  integrity sha1-mS0xKc999ocLlsV4WMJJoSD4uLU=
+
 errno@^0.1.1:
   version "0.1.8"
   resolved "https://registry.npm.taobao.org/errno/download/errno-0.1.8.tgz#8bb3e9c7d463be4976ff888f76b4809ebc2e811f"
@@ -1385,6 +1424,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+escape-string-regexp@^4.0.0:
+  version "4.0.0"
+  resolved "http://npm-int.fiture.com:80/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
+  integrity sha1-FLqDpdNz49MR5a/KKc9b+tllvzQ=
 
 eslint-config-airbnb-base@^14.2.1:
   version "14.2.1"
@@ -2353,6 +2397,13 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+linkify-it@^3.0.1:
+  version "3.0.2"
+  resolved "http://npm-int.fiture.com:80/linkify-it/-/linkify-it-3.0.2.tgz#f55eeb8bc1d3ae754049e124ab3bb56d97797fb8"
+  integrity sha1-9V7ri8HTrnVASeEkqzu1bZd5f7g=
+  dependencies:
+    uc.micro "^1.0.1"
+
 lint-staged@^10.5.4:
   version "10.5.4"
   resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.5.4.tgz#cd153b5f0987d2371fc1d2847a409a2fe705b665"
@@ -2501,6 +2552,24 @@ map-obj@^4.0.0:
   resolved "https://registry.npm.taobao.org/map-obj/download/map-obj-4.2.1.tgz?cache=0&sync_timestamp=1617771296262&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmap-obj%2Fdownload%2Fmap-obj-4.2.1.tgz#e4ea399dbc979ae735c83c863dd31bdf364277b7"
   integrity sha1-5Oo5nbyXmuc1yDyGPdMb3zZCd7c=
 
+markdown-it@^12.0.6:
+  version "12.0.6"
+  resolved "http://npm-int.fiture.com:80/markdown-it/-/markdown-it-12.0.6.tgz#adcc8e5fe020af292ccbdf161fe84f1961516138"
+  integrity sha1-rcyOX+Agryksy98WH+hPGWFRYTg=
+  dependencies:
+    argparse "^2.0.1"
+    entities "~2.1.0"
+    linkify-it "^3.0.1"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.5"
+
+markdown-table@^2.0.0:
+  version "2.0.0"
+  resolved "http://npm-int.fiture.com:80/markdown-table/-/markdown-table-2.0.0.tgz#194a90ced26d31fe753d8b9434430214c011865b"
+  integrity sha1-GUqQztJtMf51PYuUNEMCFMARhls=
+  dependencies:
+    repeat-string "^1.0.0"
+
 mathml-tag-names@^2.1.3:
   version "2.1.3"
   resolved "https://registry.npm.taobao.org/mathml-tag-names/download/mathml-tag-names-2.1.3.tgz#4ddadd67308e780cf16a47685878ee27b736a0a3"
@@ -2513,6 +2582,15 @@ mdast-util-definitions@^4.0.0:
   dependencies:
     unist-util-visit "^2.0.0"
 
+mdast-util-find-and-replace@^1.1.0:
+  version "1.1.1"
+  resolved "http://npm-int.fiture.com:80/mdast-util-find-and-replace/-/mdast-util-find-and-replace-1.1.1.tgz#b7db1e873f96f66588c321f1363069abf607d1b5"
+  integrity sha1-t9sehz+W9mWIwyHxNjBpq/YH0bU=
+  dependencies:
+    escape-string-regexp "^4.0.0"
+    unist-util-is "^4.0.0"
+    unist-util-visit-parents "^3.0.0"
+
 mdast-util-from-markdown@^0.8.0:
   version "0.8.5"
   resolved "https://registry.npm.taobao.org/mdast-util-from-markdown/download/mdast-util-from-markdown-0.8.5.tgz#d1ef2ca42bc377ecb0463a987910dae89bd9a28c"
@@ -2523,6 +2601,48 @@ mdast-util-from-markdown@^0.8.0:
     micromark "~2.11.0"
     parse-entities "^2.0.0"
     unist-util-stringify-position "^2.0.0"
+
+mdast-util-gfm-autolink-literal@^0.1.0:
+  version "0.1.3"
+  resolved "http://npm-int.fiture.com:80/mdast-util-gfm-autolink-literal/-/mdast-util-gfm-autolink-literal-0.1.3.tgz#9c4ff399c5ddd2ece40bd3b13e5447d84e385fb7"
+  integrity sha1-nE/zmcXd0uzkC9OxPlRH2E44X7c=
+  dependencies:
+    ccount "^1.0.0"
+    mdast-util-find-and-replace "^1.1.0"
+    micromark "^2.11.3"
+
+mdast-util-gfm-strikethrough@^0.2.0:
+  version "0.2.3"
+  resolved "http://npm-int.fiture.com:80/mdast-util-gfm-strikethrough/-/mdast-util-gfm-strikethrough-0.2.3.tgz#45eea337b7fff0755a291844fbea79996c322890"
+  integrity sha1-Re6jN7f/8HVaKRhE++p5mWwyKJA=
+  dependencies:
+    mdast-util-to-markdown "^0.6.0"
+
+mdast-util-gfm-table@^0.1.0:
+  version "0.1.6"
+  resolved "http://npm-int.fiture.com:80/mdast-util-gfm-table/-/mdast-util-gfm-table-0.1.6.tgz#af05aeadc8e5ee004eeddfb324b2ad8c029b6ecf"
+  integrity sha1-rwWurcjl7gBO7d+zJLKtjAKbbs8=
+  dependencies:
+    markdown-table "^2.0.0"
+    mdast-util-to-markdown "~0.6.0"
+
+mdast-util-gfm-task-list-item@^0.1.0:
+  version "0.1.6"
+  resolved "http://npm-int.fiture.com:80/mdast-util-gfm-task-list-item/-/mdast-util-gfm-task-list-item-0.1.6.tgz#70c885e6b9f543ddd7e6b41f9703ee55b084af10"
+  integrity sha1-cMiF5rn1Q93X5rQflwPuVbCErxA=
+  dependencies:
+    mdast-util-to-markdown "~0.6.0"
+
+mdast-util-gfm@^0.1.0:
+  version "0.1.2"
+  resolved "http://npm-int.fiture.com:80/mdast-util-gfm/-/mdast-util-gfm-0.1.2.tgz#8ecddafe57d266540f6881f5c57ff19725bd351c"
+  integrity sha1-js3a/lfSZlQPaIH1xX/xlyW9NRw=
+  dependencies:
+    mdast-util-gfm-autolink-literal "^0.1.0"
+    mdast-util-gfm-strikethrough "^0.2.0"
+    mdast-util-gfm-table "^0.1.0"
+    mdast-util-gfm-task-list-item "^0.1.0"
+    mdast-util-to-markdown "^0.6.1"
 
 mdast-util-to-hast@^10.2.0:
   version "10.2.0"
@@ -2538,7 +2658,7 @@ mdast-util-to-hast@^10.2.0:
     unist-util-position "^3.0.0"
     unist-util-visit "^2.0.0"
 
-mdast-util-to-markdown@^0.6.0:
+mdast-util-to-markdown@^0.6.0, mdast-util-to-markdown@^0.6.1, mdast-util-to-markdown@~0.6.0:
   version "0.6.5"
   resolved "https://registry.npm.taobao.org/mdast-util-to-markdown/download/mdast-util-to-markdown-0.6.5.tgz#b33f67ca820d69e6cc527a93d4039249b504bebe"
   integrity sha1-sz9nyoINaebMUnqT1AOSSbUEvr4=
@@ -2555,7 +2675,7 @@ mdast-util-to-string@^2.0.0:
   resolved "https://registry.npm.taobao.org/mdast-util-to-string/download/mdast-util-to-string-2.0.0.tgz#b8cfe6a713e1091cb5b728fc48885a4767f8b97b"
   integrity sha1-uM/mpxPhCRy1tyj8SIhaR2f4uXs=
 
-mdurl@^1.0.0:
+mdurl@^1.0.0, mdurl@^1.0.1:
   version "1.0.1"
   resolved "http://npm-int.fiture.com:80/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
@@ -2588,7 +2708,52 @@ merge2@^1.3.0:
   resolved "https://registry.npm.taobao.org/merge2/download/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
 
-micromark@~2.11.0:
+micromark-extension-gfm-autolink-literal@~0.5.0:
+  version "0.5.7"
+  resolved "http://npm-int.fiture.com:80/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-0.5.7.tgz#53866c1f0c7ef940ae7ca1f72c6faef8fed9f204"
+  integrity sha1-U4ZsHwx++UCufKH3LG+u+P7Z8gQ=
+  dependencies:
+    micromark "~2.11.3"
+
+micromark-extension-gfm-strikethrough@~0.6.5:
+  version "0.6.5"
+  resolved "http://npm-int.fiture.com:80/micromark-extension-gfm-strikethrough/-/micromark-extension-gfm-strikethrough-0.6.5.tgz#96cb83356ff87bf31670eefb7ad7bba73e6514d1"
+  integrity sha1-lsuDNW/4e/MWcO77ete7pz5lFNE=
+  dependencies:
+    micromark "~2.11.0"
+
+micromark-extension-gfm-table@~0.4.0:
+  version "0.4.3"
+  resolved "http://npm-int.fiture.com:80/micromark-extension-gfm-table/-/micromark-extension-gfm-table-0.4.3.tgz#4d49f1ce0ca84996c853880b9446698947f1802b"
+  integrity sha1-TUnxzgyoSZbIU4gLlEZpiUfxgCs=
+  dependencies:
+    micromark "~2.11.0"
+
+micromark-extension-gfm-tagfilter@~0.3.0:
+  version "0.3.0"
+  resolved "http://npm-int.fiture.com:80/micromark-extension-gfm-tagfilter/-/micromark-extension-gfm-tagfilter-0.3.0.tgz#d9f26a65adee984c9ccdd7e182220493562841ad"
+  integrity sha1-2fJqZa3umEyczdfhgiIEk1YoQa0=
+
+micromark-extension-gfm-task-list-item@~0.3.0:
+  version "0.3.3"
+  resolved "http://npm-int.fiture.com:80/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-0.3.3.tgz#d90c755f2533ed55a718129cee11257f136283b8"
+  integrity sha1-2Qx1XyUz7VWnGBKc7hElfxNig7g=
+  dependencies:
+    micromark "~2.11.0"
+
+micromark-extension-gfm@^0.3.0:
+  version "0.3.3"
+  resolved "http://npm-int.fiture.com:80/micromark-extension-gfm/-/micromark-extension-gfm-0.3.3.tgz#36d1a4c089ca8bdfd978c9bd2bf1a0cb24e2acfe"
+  integrity sha1-NtGkwInKi9/ZeMm9K/GgyyTirP4=
+  dependencies:
+    micromark "~2.11.0"
+    micromark-extension-gfm-autolink-literal "~0.5.0"
+    micromark-extension-gfm-strikethrough "~0.6.5"
+    micromark-extension-gfm-table "~0.4.0"
+    micromark-extension-gfm-tagfilter "~0.3.0"
+    micromark-extension-gfm-task-list-item "~0.3.0"
+
+micromark@^2.11.3, micromark@~2.11.0, micromark@~2.11.3:
   version "2.11.4"
   resolved "https://registry.npm.taobao.org/micromark/download/micromark-2.11.4.tgz#d13436138eea826383e822449c9a5c50ee44665a"
   integrity sha1-0TQ2E47qgmOD6CJEnJpcUO5EZlo=
@@ -2988,6 +3153,11 @@ path-to-regexp@^1.7.0:
   integrity sha1-iHs7qdhDk+h6CgufTLdWGYtTVIo=
   dependencies:
     isarray "0.0.1"
+
+path-to-regexp@^6.2.0:
+  version "6.2.0"
+  resolved "http://npm-int.fiture.com:80/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
+  integrity sha1-97OAMzYQTDRoia3s5hRmkjBkXzg=
 
 path-type@^2.0.0:
   version "2.0.0"
@@ -3559,6 +3729,13 @@ react-is@^17.0.0, react-is@^17.0.1:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=
 
+react-markdown-editor-lite@^1.2.4:
+  version "1.2.4"
+  resolved "http://npm-int.fiture.com:80/react-markdown-editor-lite/-/react-markdown-editor-lite-1.2.4.tgz#d47ea00f62e7c82ae8803a990d011d4f44015c20"
+  integrity sha1-1H6gD2LnyCrogDqZDQEdT0QBXCA=
+  dependencies:
+    classnames "^2.2.6"
+
 react-markdown@^6.0.0:
   version "6.0.0"
   resolved "http://npm-int.fiture.com:80/react-markdown/-/react-markdown-6.0.0.tgz#e63cd32d095e864384d524986c44c34c919de517"
@@ -3689,6 +3866,14 @@ regexpp@^3.0.0, regexpp@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/regexpp/download/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
   integrity sha1-IG0K0KVkjP+9uK5GQ489xRyfeOI=
+
+remark-gfm@^1.0.0:
+  version "1.0.0"
+  resolved "http://npm-int.fiture.com:80/remark-gfm/-/remark-gfm-1.0.0.tgz#9213643001be3f277da6256464d56fd28c3b3c0d"
+  integrity sha1-khNkMAG+Pyd9piVkZNVv0ow7PA0=
+  dependencies:
+    mdast-util-gfm "^0.1.0"
+    micromark-extension-gfm "^0.3.0"
 
 remark-parse@^9.0.0:
   version "9.0.0"
@@ -4318,6 +4503,11 @@ typescript@^4.2.4:
   version "4.2.4"
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-4.2.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
   integrity sha1-hhC1l0feAo/aiYqK7w4QPxVtCWE=
+
+uc.micro@^1.0.1, uc.micro@^1.0.5:
+  version "1.0.6"
+  resolved "http://npm-int.fiture.com:80/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
+  integrity sha1-nEEagCpAmpH8bPdAgbq6NLJEmaw=
 
 unbox-primitive@^1.0.0:
   version "1.0.1"
