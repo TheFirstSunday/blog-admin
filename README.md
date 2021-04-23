@@ -23,3 +23,7 @@ ___
 ```javascript
     Vite + typescript + Hooks + react-router-dom + mobx + antd + jest
 ```
+
+## CI/CD
+   
+   - need to be improved
