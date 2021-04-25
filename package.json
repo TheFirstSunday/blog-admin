@@ -20,6 +20,7 @@
     "**/*.less": "stylelint --syntax less"
   },
   "dependencies": {
+    "@ahooksjs/use-request": "^2.8.4",
     "@ant-design/icons": "^4.6.2",
     "antd": "^4.15.0",
     "axios": "^0.21.1",
