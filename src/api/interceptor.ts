@@ -3,7 +3,7 @@ import * as qs from 'qs'
 import { message } from 'antd'
 
 export const baseURL =
-  process.env.NODE_ENV === 'production' ? 'https://xxx.xxx.com' : 'http://xxx.dev.xxx.com'
+  process.env.NODE_ENV === 'production' ? 'https://xxx.xxx.com' : 'http://127.0.0.1:3000/'
 
 // 创建一个独立的axios实例
 const service = axios.create({
