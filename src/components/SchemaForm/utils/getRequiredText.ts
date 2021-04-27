@@ -1,4 +1,10 @@
-const getRequiredText = (type, name, props) => {
+type RequiredText = (
+  type: string,
+  name: string,
+  props: { placeholder?: string; [propName: string]: any }
+) => string
+
+const getRequiredText: RequiredText = (type, name, props) => {
   const { placeholder } = props
 
   if (placeholder) return placeholder
@@ -7,26 +13,15 @@ const getRequiredText = (type, name, props) => {
     case 'input':
     case 'textarea':
     case 'number':
-    case 'positiveInteger':
-    case 'editor':
-    case 'tags':
-    case 'email':
+    case 'autoComplete':
       requiredText = `请输入${name}`
       break
     case 'enums':
     case 'select':
-    case 'boolean':
-    case 'time':
-    case 'milliSecond':
-    case 'radioGroup':
-    case 'fileUpload':
-    case 'dateRange':
-    case 'datetimeRange':
-    case 'date':
-    case 'datetime':
-    case 'uploadGroup':
-    case 'checkboxGroup':
-    case 'cityPicker':
+    case 'cascader':
+    case 'datePicker':
+    case 'rangePicker':
+    case 'timePicker':
       requiredText = `请选择${name}`
       break
     case 'inputSelect':

@@ -1,11 +1,9 @@
-const setPlaceholder = ({ props = {}, type }, requiredText) => {
-  if (type === 'datetimeRange') return
-  if (props.placeholder === false || !requiredText) {
-    // 日期组件自带 placeholder
-    delete props.placeholder
-  } else {
-    props.placeholder = requiredText
-  }
+type SetPlaceholder = (type: string, requiredText: string) => string
+
+const setPlaceholder: SetPlaceholder = (type, requiredText) => {
+  if (type === 'datePicker' || type === 'rangePicker') return ''
+
+  return requiredText
 }
 
 export default setPlaceholder

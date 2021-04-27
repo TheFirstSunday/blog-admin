@@ -1,10 +1,9 @@
-const getRules = (field, requiredText) => {
-  const { required, type } = field
-  let { rules = [] } = field
+type GetRules = (required?: boolean | undefined, rules?: [], requiredText?: string) => any[]
 
-  if (required) {
-    rules = [{ required: true, message: requiredText }, ...rules]
-  }
+const getRules: GetRules = (required, rules = [], requiredText) => {
+  if (required) return [{ required, message: requiredText }, ...rules]
 
   return rules
 }
+
+export default getRules

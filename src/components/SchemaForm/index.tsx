@@ -1,23 +1,31 @@
 import * as React from 'react'
-import { Form, Input, Button } from 'antd'
+import { Form, Button } from 'antd'
+import { baseType, extendType } from '@/constants/fieldTypes'
+import { getRules, getRequiredText, setPlaceholder } from './utils'
+
+const Children = { ...baseType, ...extendType }
 
 const { Item: FormItem } = Form
 const SchemaForm = ({ schema, data, ...props }) => {
   const [form] = Form.useForm()
-  const onFinish = () => {}
+  const onFinish = (...rest) => {
+    console.log('rest', rest)
+  }
 
   return (
     <Form form={form} onFinish={onFinish}>
-      {schema.map(({ key, name, required, rules = [], type, ...props }) => {
+      {schema.map(({ key, name, required, rules = [], type = 'input', ...props }) => {
+        const Child = Children[type]
+        const requiredText = getRequiredText(type, name, props)
         return (
           <FormItem
             key={key}
             name={name}
             label={name}
-            rules={[{ required, message: 'requiredMessage' }, ...rules]}
+            rules={getRules(required, rules, requiredText)}
             {...props}
           >
-            <Input placeholder={`请输入${name}`} />
+            <Child placeholder={setPlaceholder(props, type, requiredText)} />
           </FormItem>
         )
       })}

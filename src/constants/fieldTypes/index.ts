@@ -1,7 +1,2 @@
-import baseType from './baseType'
-import extendType from './extendType'
-
-export default {
-  baseType,
-  extendType
-}
+export { default as baseType } from './baseType'
+export { default as extendType } from './extendType'
