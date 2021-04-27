@@ -1,7 +1,18 @@
 import * as React from 'react'
 import { Moment } from 'moment'
-import { Input, InputNumber, DatePicker, TimePicker, Cascader, AutoComplete, Select } from 'antd'
+import {
+  Input,
+  InputNumber,
+  DatePicker,
+  TimePicker,
+  Cascader,
+  AutoComplete,
+  Select,
+  Radio
+} from 'antd'
 import { InputProps } from 'antd/lib/input'
+import { RadioProps } from 'antd/lib/radio'
+
 import { InputNumberProps } from 'antd/lib/input-number'
 import { TimePickerProps } from 'antd/lib/time-picker'
 import { CascaderProps } from 'antd/lib/cascader'
@@ -23,5 +34,6 @@ export default {
   timePicker: (props: TimePickerProps) => <TimePicker {...props} />,
   cascader: (props: CascaderProps) => <Cascader {...props} />,
   autoComplete: (props: AutoCompleteProps) => <AutoComplete {...props} />,
-  select: (props: SelectProps) => <Select {...props} />
+  select: (props: SelectProps) => <Select {...props} />,
+  radio: (props: RadioProps) => <Radio {...props} />
 }
