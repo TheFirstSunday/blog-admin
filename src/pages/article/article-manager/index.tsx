@@ -41,7 +41,7 @@ const ArticleManager = () => {
   }
   return (
     <>
-      <div>文章管理</div>
+      <div>SchemaForm demo</div>
       <SchemaForm {...formProps} />
     </>
   )
