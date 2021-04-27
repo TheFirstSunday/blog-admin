@@ -14,9 +14,10 @@ const SchemaForm = ({ schema, data, ...props }) => {
 
   return (
     <Form form={form} onFinish={onFinish}>
-      {schema.map(({ key, name, required, rules = [], type = 'input', ...props }) => {
+      {schema.map(({ key, name, required, rules = [], type = 'input', fieldProps, ...props }) => {
         const Child = Children[type]
         const requiredText = getRequiredText(type, name, props)
+
         return (
           <FormItem
             key={key}
@@ -25,7 +26,7 @@ const SchemaForm = ({ schema, data, ...props }) => {
             rules={getRules(required, rules, requiredText)}
             {...props}
           >
-            <Child placeholder={setPlaceholder(props, type, requiredText)} />
+            <Child placeholder={setPlaceholder(type, requiredText)} {...fieldProps} />
           </FormItem>
         )
       })}

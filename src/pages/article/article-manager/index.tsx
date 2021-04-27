@@ -8,7 +8,32 @@ const schema = [
   { key: 'rangePicker', name: 'range', type: 'rangePicker', required: true },
   { key: 'timePicker', name: 'timePicker', type: 'timePicker' },
   { key: 'cascader', name: 'cascader', type: 'cascader' },
-  { key: 'autoComplete', name: 'autoComplete', type: 'autoComplete' }
+  { key: 'autoComplete', name: 'autoComplete', type: 'autoComplete' },
+  {
+    key: 'select',
+    name: 'select',
+    type: 'select',
+    fieldProps: {
+      options: [
+        {
+          label: 'Timestamp',
+          value: 'timestamp'
+        },
+        {
+          label: 'Timestring',
+          value: 'timestring'
+        },
+        {
+          label: 'Stamparray',
+          value: 'stamparray'
+        },
+        {
+          label: 'Stampobject',
+          value: 'stampobject'
+        }
+      ]
+    }
+  }
 ]
 const ArticleManager = () => {
   const formProps = {
