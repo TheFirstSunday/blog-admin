@@ -18,6 +18,7 @@ const getRequiredText: RequiredText = (type, name, props) => {
       break
     case 'switch':
     case 'radio':
+    case 'slider':
     case 'select':
     case 'cascader':
     case 'datePicker':

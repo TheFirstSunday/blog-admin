@@ -9,11 +9,13 @@ import {
   AutoComplete,
   Select,
   Radio,
-  Switch
+  Switch,
+  Slider,
+  Rate
 } from 'antd'
 import { InputProps } from 'antd/lib/input'
 import { RadioProps } from 'antd/lib/radio'
-
+import { SliderSingleProps, SliderRangeProps } from 'antd/lib/slider'
 import { SwitchProps } from 'antd/lib/switch'
 import { CascaderProps } from 'antd/lib/cascader'
 import { TimePickerProps } from 'antd/lib/time-picker'
@@ -38,5 +40,6 @@ export default {
   autoComplete: (props: AutoCompleteProps) => <AutoComplete {...props} />,
   select: (props: SelectProps) => <Select {...props} />,
   radio: (props: RadioProps) => <Radio {...props} />,
-  switch: (props: SwitchProps) => <Switch {...props} />
+  switch: (props: SwitchProps) => <Switch {...props} />,
+  slider: (props: SliderSingleProps | SliderRangeProps) => <Slider {...props} />,
 }
