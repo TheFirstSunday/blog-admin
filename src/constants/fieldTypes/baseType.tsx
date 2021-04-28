@@ -15,6 +15,7 @@ import {
 } from 'antd'
 import { InputProps } from 'antd/lib/input'
 import { RadioProps } from 'antd/lib/radio'
+import { RateProps } from 'antd/lib/rate'
 import { SliderSingleProps, SliderRangeProps } from 'antd/lib/slider'
 import { SwitchProps } from 'antd/lib/switch'
 import { CascaderProps } from 'antd/lib/cascader'
@@ -42,4 +43,5 @@ export default {
   radio: (props: RadioProps) => <Radio {...props} />,
   switch: (props: SwitchProps) => <Switch {...props} />,
   slider: (props: SliderSingleProps | SliderRangeProps) => <Slider {...props} />,
+  rate: (props: RateProps) => <Rate {...props} />
 }
