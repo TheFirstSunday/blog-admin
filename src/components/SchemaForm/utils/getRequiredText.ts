@@ -16,7 +16,8 @@ const getRequiredText: RequiredText = (type, name, props) => {
     case 'autoComplete':
       requiredText = `请输入${name}`
       break
-    case 'enums':
+    case 'switch':
+    case 'radio':
     case 'select':
     case 'cascader':
     case 'datePicker':

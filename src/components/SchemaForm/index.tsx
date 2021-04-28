@@ -9,6 +9,7 @@ import styles from './index.module.less'
 const Children = { ...baseType, ...extendType }
 
 const { Item: FormItem } = Form
+const ignoreTypes = ['switch']
 const SchemaForm = ({ schema, data, column, ref, ...props }) => {
   const [form] = Form.useForm()
   const onFinish = (...rest) => {
@@ -37,6 +38,13 @@ const SchemaForm = ({ schema, data, column, ref, ...props }) => {
       {schema.map(({ key, name, required, rules = [], type = 'input', fieldProps, ...props }) => {
         const Child = Children[type]
         const requiredText = getRequiredText(type, name, props)
+        const defaultWidth = !ignoreTypes.includes(type) && '300px'
+
+        const childProps = {
+          placeholder: setPlaceholder(type, requiredText),
+          style: { width: fieldProps?.width || defaultWidth },
+          ...fieldProps
+        }
         const BaseFormItem = () => (
           <FormItem
             key={key}
@@ -45,11 +53,7 @@ const SchemaForm = ({ schema, data, column, ref, ...props }) => {
             rules={getRules(required, rules, requiredText)}
             {...props}
           >
-            <Child
-              placeholder={setPlaceholder(type, requiredText)}
-              style={{ width: fieldProps?.width || '300px' }}
-              {...fieldProps}
-            />
+            <Child {...childProps} />
           </FormItem>
         )
 

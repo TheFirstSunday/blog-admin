@@ -8,16 +8,18 @@ import {
   Cascader,
   AutoComplete,
   Select,
-  Radio
+  Radio,
+  Switch
 } from 'antd'
 import { InputProps } from 'antd/lib/input'
 import { RadioProps } from 'antd/lib/radio'
 
-import { InputNumberProps } from 'antd/lib/input-number'
-import { TimePickerProps } from 'antd/lib/time-picker'
+import { SwitchProps } from 'antd/lib/switch'
 import { CascaderProps } from 'antd/lib/cascader'
-import { SelectProps as AntdSelectProps, SelectValue } from 'antd/lib/select'
+import { TimePickerProps } from 'antd/lib/time-picker'
+import { InputNumberProps } from 'antd/lib/input-number'
 import { AutoCompleteProps } from 'antd/lib/auto-complete'
+import { SelectProps as AntdSelectProps, SelectValue } from 'antd/lib/select'
 import { PickerProps, RangePickerProps } from 'antd/lib/date-picker/generatePicker'
 
 const { RangePicker } = DatePicker
@@ -35,5 +37,6 @@ export default {
   cascader: (props: CascaderProps) => <Cascader {...props} />,
   autoComplete: (props: AutoCompleteProps) => <AutoComplete {...props} />,
   select: (props: SelectProps) => <Select {...props} />,
-  radio: (props: RadioProps) => <Radio {...props} />
+  radio: (props: RadioProps) => <Radio {...props} />,
+  switch: (props: SwitchProps) => <Switch {...props} />
 }
